@@ -13,7 +13,7 @@ for (let i = 0; i <Number; i++) {
 
     numbers.push(newRandomNumber);
 }
-
+//li mostro nel container//
 console.log(numbers);
 document.getElementById("container").innerHTML = numbers;
 let numero1;
@@ -22,6 +22,8 @@ let numero3;
 let numero4;
 let numero5;
 
+
+//dopo 30 sec nascondo i numeri e in seguito parte il promt//
 setTimeout(function () {
     
     
@@ -45,16 +47,34 @@ setTimeout(function () {
         console.log(numero3);
         console.log(numero4);
         console.log(numero5);
+
+//tentativi controllo risultato e alert//
+        if (numbers.includes(numero1)) {
+            alert('hai indovinato' + numero1);
+            console.log('hai indovinato' + numero1 );
+        
+            document.getElementById("container").innerHTML = 'hai indovinato' + 'numbers';
+        }else if (numbers.includes(numero2)) {
+            alert('hai indovinato' + numero2);
+        
+            document.getElementById("container").innerHTML = 'hai indovinato' + 'numbers';
+        } else if (numbers.includes(numero3)) {
+            alert('hai indovinato' + numero3);
+        
+            document.getElementById("container").innerHTML = 'hai indovinato' + 'numbers';
+        } else if (numbers.includes(numero4)) {
+            alert('hai indovinato' + numero4);
+        }else if (numbers.includes(numero5)) {
+            alert('hai indovinato' + numero5);
+        }
     
     }, 1000);
 
 }, 10000);
 
-if (numbers.includes(numero1) && numbers.includes(numero2) && numbers.includes(numero3) && numbers.includes(numero4) && numbers.includes(numero5)) {
-    alert('hai indovinato' + 'numbers');
+//provo a confrontare i numeri inseriti e a generare un risultato//
 
-    document.getElementById("container").innerHTML = 'hai indovinato' + 'numbers';
-}
+
 
 
 
