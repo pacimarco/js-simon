@@ -27,32 +27,34 @@ setTimeout(function () {
     
     document.getElementById("container").innerHTML = "";
 
-    numero1=prompt("inserisci numero 1 di 5");
-    numero2=prompt("inserisci numero 2 di 5");
-    numero3=prompt("inserisci numero 3 di 5");
-    numero4=prompt("inserisci numero 4 di 5");
-    numero5=prompt("inserisci numero 5 di 5");
+    
 
+    setTimeout(function () {
+    
+    
+    
 
+        numero1=parseInt(prompt("Inserisci numero 1 di 5"));
+        numero2=parseInt(prompt("Inserisci numero 2 di 5"));
+        numero3=parseInt(prompt("Inserisci numero 3 di 5"));
+        numero4=parseInt(prompt("Inserisci numero 4 di 5"));
+        numero5=parseInt(prompt("Inserisci numero 5 di 5"));
+    
+        console.log(parseInt(numero1));
+        console.log(numero2);
+        console.log(numero3);
+        console.log(numero4);
+        console.log(numero5);
+    
+    }, 1000);
 
 }, 10000);
 
+if (numbers.includes(numero1) && numbers.includes(numero2) && numbers.includes(numero3) && numbers.includes(numero4) && numbers.includes(numero5)) {
+    alert('hai indovinato' + 'numbers');
 
-
-
-
-    
-
-
-
-console.log(numero1);
-console.log(numero2);
-console.log(numero3);
-console.log(numero4);
-console.log(numero5);
-
-
-
+    document.getElementById("container").innerHTML = 'hai indovinato' + 'numbers';
+}
 
 
 
