@@ -49,23 +49,22 @@ setTimeout(function () {
         console.log(numero5);
 
 //tentativi controllo risultato e alert//
-        if (numbers.includes(numero1)) {
-            alert('hai indovinato' + numero1);
-            console.log('hai indovinato' + numero1 );
-        
-            document.getElementById("container").innerHTML = 'hai indovinato' + 'numbers';
-        }else if (numbers.includes(numero2)) {
-            alert('hai indovinato' + numero2);
-        
-            document.getElementById("container").innerHTML = 'hai indovinato' + 'numbers';
-        } else if (numbers.includes(numero3)) {
-            alert('hai indovinato' + numero3);
-        
-            document.getElementById("container").innerHTML = 'hai indovinato' + 'numbers';
-        } else if (numbers.includes(numero4)) {
-            alert('hai indovinato' + numero4);
-        }else if (numbers.includes(numero5)) {
-            alert('hai indovinato' + numero5);
+        for (let i = 0; i <Number; i++) {
+            if (numbers[i]==numero1){
+                alert("Hai indovinato il numero 1");
+            }
+            if (numbers[i]==numero2){
+                alert("Hai indovinato il numero 2");
+            }
+            if (numbers[i]==numero3){
+                alert("Hai indovinato il numero 3");
+            }
+            if (numbers[i]==numero4){
+                alert("Hai indovinato il numero 4");
+            }
+            if (numbers[i]==numero5){
+                alert("Hai indovinato il numero 5");
+            }
         }
     
     }, 1000);
