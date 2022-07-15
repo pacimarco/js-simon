@@ -51,19 +51,19 @@ setTimeout(function () {
 //tentativi controllo risultato e alert//
         for (let i = 0; i <Number; i++) {
             if (numbers[i]==numero1){
-                alert("Hai indovinato il numero 1");
+                alert('Hai indovinato il numero' + numero1);
             }
             if (numbers[i]==numero2){
-                alert("Hai indovinato il numero 2");
+                alert('Hai indovinato il numero' + numero2);
             }
             if (numbers[i]==numero3){
-                alert("Hai indovinato il numero 3");
+                alert('Hai indovinato il numero' + numero3);
             }
             if (numbers[i]==numero4){
-                alert("Hai indovinato il numero 4");
+                alert('Hai indovinato il numero' + numero4);
             }
             if (numbers[i]==numero5){
-                alert("Hai indovinato il numero 5");
+                alert('Hai indovinato il numero' + numero5);
             }
         }
     
